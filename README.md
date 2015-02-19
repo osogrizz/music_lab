@@ -17,28 +17,79 @@ Before you start coding, look up the answers the following questions
 and place them inline below:
 
 1. What are some books that Martin Fowler has written?
+
+Refactoring: Ruby Edition, The Pragmatic Programmer, NoSQL Distilled: A brief Guid to the Emerging World of Polyglot Existence
+
 2. What's the difference between "active record" and "ActiveRecord"?
+
+"active record" is an architectural pattern found in software that stores in-memory object data in relational databases. "ActiveRecord" is an open source library designed to fulfill the active record pattern.
+
 3. Is the "active record" pattern an ORM?
+
+It is a description of an ORM.
+
 4. Why might we want to use an ORM in our code?
+
+It might hep with separation of concerns, and keeping the code DRY.
+
 5. What gem do we need to allow Sinatra to interact with ActiveRecord?
+
+The activerecord gem.
+
 6. What is `rake`?
+
+Rake is an internal Domain Specific Language, build language.
+
 7. What is a database migration?
+
+A database migration is a way of changing or updating a database schema.
+
 8. What command can we use to create a new ActiveRecord migration?
+
+rake db:create_migrate name=db_name
+
 9. What command runs our existing migrations?
+
+rake db:migrate
+
 10. What commands reverses a migration?
+
+rake db:rollback
+
 11. What command tells us which migrations have run and which have
 not?
+
+rake db:migrate status
+
 12. Which class do we have to extend if we want to create a new model?
+
+The subclass.
+
 13. What's the difference between ActiveRecord's `.new` and `.create`
 methods?
+
+.new creates a new instance of an existing class, while .create creates a new class. 
+
 14. What's the difference between ActiveRecord's `.find` and
 `.find_by` methods?
+
+.find retreives an object that matches the specified primary key. find_by finds the first record matching some condition.
+
+
 15. What's the difference between ActiveRecord's `.find_by` and
 `.where` methods?
+
+.where returns an ActiveRecord::Relation object that allows one to perform additional methods.
+
 16. What ActiveRecord method do we use to change a value in the
 database?
+
+update
 17. What ActiveRecord method do we use to remove an item from the
 database?
+
+Delete
+
 
 Steps
 -----
